@@ -79,4 +79,4 @@ with the color scheme of your choice
 Use `:TmuxlineSnapshot ~/tmux_shell_prompt` from a vim in a tmux
 
 * Change prompt color scheme
-Use `:PromptlineSnapshot ~/dotfile/.shell_prompt.sh
+Use `:PromptlineSnapshot ~/dotfile/.shell_prompt.sh`
