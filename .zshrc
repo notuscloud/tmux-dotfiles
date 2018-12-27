@@ -20,8 +20,6 @@ export ZSH_THEME="agnoster"
 
 #POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 
-plugins=(git brew osx extract z docker docker-compose kubectl terraform kops vault consul)
-
 # Uncomment the following line to disable auto-setting terminal title.
 #export DISABLE_AUTO_TITLE="true"
 
@@ -33,6 +31,8 @@ source $ZSH/oh-my-zsh.sh
 EXTRA=~/extra.sh ; [ -f $EXTRA ] && source $EXTRA
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/vault vault
 
-complete -o nospace -C /usr/local/bin/consul consul
+# Obsolete steps
+#complete -o nospace -C /usr/local/bin/vault vault
+#complete -o nospace -C /usr/local/bin/consul consul
+plugins=(git extract z terraform vault consul)
