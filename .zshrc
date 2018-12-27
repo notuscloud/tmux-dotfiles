@@ -2,6 +2,11 @@ export ZSH=$HOME/.oh-my-zsh
 #export ZSH_THEME="powerlevel9k/powerlevel9k"
 
 export ZSH_THEME="agnoster"
+
+# For tmux airline
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
 #
 # PowerLevel customization
 #POWERLEVEL9K_PROMPT_ON_NEWLINE=true
