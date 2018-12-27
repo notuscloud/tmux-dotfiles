@@ -1,33 +1,15 @@
 ## Install
 
-### Install tmux and zsh
-
-```
-brew install tmux
-brew install zsh
-brew install reattach-to-user-namespace
-```
-
 ### clone the dotfile repo
-```
+
+```bash
 cd ~
-git clone https://github.com/notuscloud/dotfiles.git
-```
-
-#### OS branch switch
-
-* If you're using `macos` 
-```
-git checkout macos
-```
-
-* If you're using `linux`
-```
-git checkout linux
+git clone https://github.com/notuscloud/tmux-dotfiles.git dotfiles
 ```
 
 ### Config tmux
-```
+
+```bash
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/tmux_shell_prompt ~/tmux_shell_prompt
 ```
@@ -35,7 +17,8 @@ ln -s ~/dotfiles/tmux_shell_prompt ~/tmux_shell_prompt
 ### Config+Install zsh/ohmyzsh
 
 #### Install Oh-My-Zsh
-```
+
+```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
@@ -47,11 +30,12 @@ ln -s ~/dotfiles/.shell_prompt.sh ~/.shell_prompt.sh
 ### Configuring VIM
 
 * Install Vundle
-```
+
+```bash
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-```
+```bash
 ln -s ~/dotfile/.vimrc ~/.vimrc
 ``` 
 #### Install the plugins
@@ -62,7 +46,8 @@ ln -s ~/dotfile/.vimrc ~/.vimrc
 #### Install inconsolata font
 
 * Clone the repo from github
-```
+
+```bash
 git clone https://github.com/powerline/fonts.git
 ```
 
